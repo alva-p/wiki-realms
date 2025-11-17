@@ -12,7 +12,7 @@ export function Navigation() {
     { href: '/lore', label: 'Lore', icon: '📖' },
     { href: '/nfts', label: 'NFTs', icon: '👑' },
     { href: '/houses', label: 'Houses', icon: '🏠' },
-    { href: '/items', label: 'Items', icon: '⚙️' },
+    { href: '/items', label: 'Items & Crafting', icon: '⚙️' },
     { href: '/abilities', label: 'Abilities', icon: '⚡' },
     { href: '/classes', label: 'Classes', icon: '🛡️' },
     { href: '/aiagents', label: 'AI Agents', icon: '🤖' },

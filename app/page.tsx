@@ -16,7 +16,7 @@ export default function Home() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
-        <source src="/Hiroba360Low.mp4" type="video/mp4" />
+        <source src="https://pub-a5f32ec94ec44107a740c08a0430ca32.r2.dev/Hiroba360Low.mp4" type="video/mp4" />
         Tu navegador no soporta el elemento de video.
       </video>
 
@@ -61,7 +61,7 @@ export default function Home() {
                 { title: 'Lore', href: '/lore' },
                 { title: 'NFTs', href: '/nfts' },
                 { title: 'Houses', href: '/houses' },
-                { title: 'Items', href: '/items' },
+                { title: 'Items & Crafting', href: '/items' },
                 { title: 'Abilities', href: '/abilities' },
                 { title: 'Classes', href: '/classes' },
                 { title: 'AI Agents', href: '/aiagents' },

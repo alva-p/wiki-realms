@@ -43,7 +43,7 @@ function Navigation() {
         },
         {
             href: '/items',
-            label: 'Items',
+            label: 'Items & Crafting',
             icon: '⚙️'
         },
         {
