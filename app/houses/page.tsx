@@ -38,9 +38,10 @@ export default function HousesPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-background flex flex-col relative" style={{ backgroundImage: "url('/houses.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      {/* overlay */}
-      <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+    <div className="min-h-screen bg-black flex flex-col relative">
+
+      {/* overlay (transparent because background is pure black) */}
+      <div className="absolute inset-0 bg-transparent pointer-events-none" />
 
       <Navigation />
 
@@ -78,6 +79,7 @@ export default function HousesPage() {
                 </p>
               </div>
             </div>
+            
           ))}
         </div>
         
