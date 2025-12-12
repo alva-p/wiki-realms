@@ -23,6 +23,8 @@ export default function Page() {
   const [sales, setSales] = React.useState<Sale[]>([])
   const [loading, setLoading] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
+  const KOJIN_LIMIT = 10
+  const MOUNT_LIMIT = 6
 
   React.useEffect(() => {
     console.log('[LastSales Page] useEffect triggered')
@@ -83,6 +85,9 @@ export default function Page() {
     [sales]
   )
 
+  const kojinDisplay = React.useMemo(() => kojinSales.slice(0, KOJIN_LIMIT), [kojinSales])
+  const mountDisplay = React.useMemo(() => mountSales.slice(0, MOUNT_LIMIT), [mountSales])
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -123,11 +128,11 @@ export default function Page() {
               <div className="space-y-4">
                 <div className="rounded-lg p-4 text-center">
                   <h2 className="text-2xl font-bold text-white">KOJIN</h2>
-                  <p className="text-sm text-white opacity-80">{kojinSales.length} recent sales</p>
+                  <p className="text-sm text-white opacity-80">{Math.min(kojinSales.length, KOJIN_LIMIT)} recent sales</p>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-3">
-                  {kojinSales.slice(0, 10).map((sale, idx) => (
+                  {kojinDisplay.map((sale, idx) => (
                     <div 
                       key={`kojin-${sale.id}-${idx}`} 
                       className="rounded-lg border-2 border-purple-200 bg-white p-3 shadow-sm hover:shadow-md transition-shadow"
@@ -187,11 +192,11 @@ export default function Page() {
               <div className="space-y-4">
                 <div className="rounded-lg p-4 text-center">
                   <h2 className="text-2xl font-bold text-white">MOUNTS</h2>
-                  <p className="text-sm text-white opacity-80">{mountSales.length} recent sales</p>
+                  <p className="text-sm text-white opacity-80">{Math.min(mountSales.length, MOUNT_LIMIT)} recent sales</p>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-3">
-                  {mountSales.slice(0, 10).map((sale, idx) => (
+                  {mountDisplay.map((sale, idx) => (
                     <div 
                       key={`mount-${sale.id}-${idx}`} 
                       className="rounded-lg border-2 border-green-200 bg-white p-3 shadow-sm hover:shadow-md transition-shadow"
