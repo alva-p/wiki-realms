@@ -1,0 +1,18 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/abilities/page": "app/abilities/page.js",
+  "/aiagents/page": "app/aiagents/page.js",
+  "/api/lastsales/route": "app/api/lastsales/route.js",
+  "/classes/page": "app/classes/page.js",
+  "/gamemodes/page": "app/gamemodes/page.js",
+  "/houses/page": "app/houses/page.js",
+  "/items/page": "app/items/page.js",
+  "/lastsales/page": "app/lastsales/page.js",
+  "/lore/page": "app/lore/page.js",
+  "/maps/page": "app/maps/page.js",
+  "/missions/page": "app/missions/page.js",
+  "/nfts/page": "app/nfts/page.js",
+  "/page": "app/page.js",
+  "/team/page": "app/team/page.js"
+}

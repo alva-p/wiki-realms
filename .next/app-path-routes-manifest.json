@@ -1,0 +1,18 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/abilities/page": "/abilities",
+  "/aiagents/page": "/aiagents",
+  "/api/lastsales/route": "/api/lastsales",
+  "/classes/page": "/classes",
+  "/gamemodes/page": "/gamemodes",
+  "/houses/page": "/houses",
+  "/items/page": "/items",
+  "/lastsales/page": "/lastsales",
+  "/lore/page": "/lore",
+  "/maps/page": "/maps",
+  "/missions/page": "/missions",
+  "/nfts/page": "/nfts",
+  "/page": "/",
+  "/team/page": "/team"
+}
