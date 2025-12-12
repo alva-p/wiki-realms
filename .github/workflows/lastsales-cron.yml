@@ -3,7 +3,7 @@ name: LastSales Refresh Cron
 on:
   schedule:
     - cron: '*/15 * * * *' # every 15 minutes
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 jobs:
   refresh:
@@ -14,5 +14,5 @@ jobs:
         with:
           url: ${{ secrets.SITE_URL }}/api/lastsales
           method: POST
-          headers: |
-            content-type: application/json
+          customHeaders: |
+            Content-Type: application/json
