@@ -1,29 +1,11 @@
-name: LastSales Refresh Cron
+name: LastSales Refresh (manual)
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
-  refresh:
+  noop:
     runs-on: ubuntu-latest
-    # expose secrets as env for steps
-    env:
-      SITE_URL: ${{ secrets.SITE_URL }}
-      API_KEY: ${{ secrets.API_KEY }}
     steps:
-      - name: Validate SITE_URL secret
-        run: |
-          echo "SITE_URL=${SITE_URL}"
-          if [ -z "${SITE_URL}" ]; then
-            echo "ERROR: SITE_URL secret is not set. Please add SITE_URL in repository secrets."
-            exit 1
-          fi
-
-      - name: Trigger LastSales refresh
-        uses: fjogeleit/http-request-action@v1
-        with:
-          url: ${{ env.SITE_URL }}/api/lastsales
-          method: POST
-          headers: '{"Content-Type":"application/json","x-api-key":"${{ env.API_KEY }}"}'
+      - name: Disabled
+        run: echo "GitHub workflow disabled; use Vercel cron instead."
