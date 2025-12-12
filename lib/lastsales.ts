@@ -18,13 +18,14 @@ export type Sale = {
 type Stored = {
   last_timestamps: Record<string, number>
   sales: Sale[]
+  last_refresh?: number
 }
 
 function ensureDataFile() {
   const dir = path.dirname(DATA_PATH)
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
   if (!fs.existsSync(DATA_PATH)) {
-    const initial: Stored = { last_timestamps: {}, sales: [] }
+    const initial: Stored = { last_timestamps: {}, sales: [], last_refresh: 0 }
     fs.writeFileSync(DATA_PATH, JSON.stringify(initial, null, 2))
   }
 }
@@ -33,15 +34,18 @@ export function readStored(): Stored {
   ensureDataFile()
   const raw = fs.readFileSync(DATA_PATH, 'utf-8')
   try {
-    return JSON.parse(raw) as Stored
+    const parsed = JSON.parse(raw) as Stored
+    if (typeof parsed.last_refresh !== 'number') parsed.last_refresh = 0
+    return parsed
   } catch (err) {
-    const initial: Stored = { last_timestamps: {}, sales: [] }
+    const initial: Stored = { last_timestamps: {}, sales: [], last_refresh: 0 }
     return initial
   }
 }
 
 export function writeStored(data: Stored) {
   ensureDataFile()
+  if (typeof data.last_refresh !== 'number') data.last_refresh = 0
   fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2))
 }
 
@@ -308,6 +312,7 @@ export async function refreshCollections(collections: { name?: string; contract?
     }
   }
 
+  stored.last_refresh = Math.floor(Date.now() / 1000)
   writeStored(stored)
   return stored
 }
