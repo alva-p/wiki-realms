@@ -1,0 +1,18 @@
+name: LastSales Refresh Cron
+
+on:
+  schedule:
+    - cron: '*/15 * * * *' # every 15 minutes
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger LastSales refresh
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.SITE_URL }}/api/lastsales
+          method: POST
+          headers: |
+            content-type: application/json
