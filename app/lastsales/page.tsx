@@ -161,7 +161,7 @@ export default function Page() {
                               <span className="font-mono text-gray-800">{(sale.matcher || '').slice(0, 6)}...</span>
                             </div>
                             <div className="flex justify-between items-center pt-1 border-t">
-                              <span className="font-semibold text-purple-700">Precio:</span>
+                              <span className="font-semibold text-purple-700">Price:</span>
                               <span className="font-bold text-sm text-purple-900">{sale.price.toFixed(1)} RON</span>
                             </div>
                           </div>
@@ -225,7 +225,7 @@ export default function Page() {
                               <span className="font-mono text-gray-800">{(sale.matcher || '').slice(0, 6)}...</span>
                             </div>
                             <div className="flex justify-between items-center pt-1 border-t">
-                              <span className="font-semibold text-green-700">Precio:</span>
+                              <span className="font-semibold text-green-700">Price:</span>
                               <span className="font-bold text-sm text-green-900">{sale.price.toFixed(1)} RON</span>
                             </div>
                           </div>
@@ -237,7 +237,7 @@ export default function Page() {
                               rel="noreferrer"
                               className="text-[10px] text-blue-600 hover:underline block text-center"
                             >
-                              Ver tx →
+                              View tx →
                             </a>
                           )}
                         </div>
