@@ -26,7 +26,4 @@ jobs:
         with:
           url: ${{ env.SITE_URL }}/api/lastsales
           method: POST
-          # the action expects header lines in `customHeaders`
-          customHeaders: |
-            Content-Type: application/json
-            x-api-key: ${{ env.API_KEY }}
+          headers: '{"Content-Type":"application/json","x-api-key":"${{ env.API_KEY }}"}'
