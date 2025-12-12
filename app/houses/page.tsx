@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 
@@ -46,77 +47,66 @@ export default function HousesPage() {
       <Navigation />
 
       <main className="relative z-10 flex-1 p-4">
-        <div className="grid grid-cols-3 gap-8 h-1/2 mb-8">
-          {houses.slice(0, 3).map((house, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center text-center cursor-pointer group"
-            >
-              {/* Logo visible SIEMPRE */}
-              <img
-                src={house.img}
-                alt={house.name}
-                className="
-                  w-80 h-80 drop-shadow-xl mb-4
-                  transition-transform duration-300 group-hover:scale-105
-                "
-              />
+        {/* Grid: izquierda = casas, derecha = imagen de damage */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
 
-              {/* Contenedor animado (invisible hasta hover) */}
-              <div
-                className="
-                  opacity-0 max-h-0 overflow-hidden
-                  transition-all duration-500
-                  group-hover:opacity-100 group-hover:max-h-[500px]
-                "
-              >
-                <h2 className="text-3xl font-bold text-white mb-2">
-                  {house.name}
-                </h2>
+          {/* LEFT: casas (logos + descriptions) */}
+          <div className="w-full">
+            {/* Top row: first 3 houses */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+              {houses.slice(0, 3).map((house, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col items-center text-center cursor-pointer group"
+                >
+                  <img
+                    src={house.img}
+                    alt={house.name}
+                    className="w-64 h-64 drop-shadow-xl mb-4 transition-transform duration-300 group-hover:scale-105"
+                  />
 
-                <p className="text-white text-lg leading-relaxed">
-                  {house.text}
-                </p>
-              </div>
+                  <div className="opacity-100">
+                    <h2 className="text-2xl font-bold text-white mb-1">{house.name}</h2>
+                    <p className="text-white text-sm leading-relaxed">{house.text}</p>
+                  </div>
+                </div>
+              ))}
+
+              {/* Bottom row placeholder will be a full-span container on sm+ and center its children */}
+              <div className="sm:col-span-3" aria-hidden />
             </div>
-            
-          ))}
-        </div>
-        
-        <div className="grid grid-cols-2 gap-8 h-1/2 place-items-center">
-          {houses.slice(3, 5).map((house, i) => (
-            <div
-              key={i + 3}
-              className="flex flex-col items-center text-center cursor-pointer group"
-            >
-              {/* Logo visible SIEMPRE */}
-              <img
-                src={house.img}
-                alt={house.name}
-                className="
-                  w-80 h-80 drop-shadow-xl mb-4
-                  transition-transform duration-300 group-hover:scale-105
-                "
-              />
 
-              {/* Contenedor animado (invisible hasta hover) */}
-              <div
-                className="
-                  opacity-0 max-h-0 overflow-hidden
-                  transition-all duration-500
-                  group-hover:opacity-100 group-hover:max-h-[500px]
-                "
-              >
-                <h2 className="text-3xl font-bold text-white mb-2">
-                  {house.name}
-                </h2>
-
-                <p className="text-white text-lg leading-relaxed">
-                  {house.text}
-                </p>
-              </div>
+            {/* Centered bottom row: remaining houses */}
+            <div className="flex justify-center gap-8">
+              {houses.slice(3).map((house, i) => (
+                <div key={i + 3} className="flex flex-col items-center text-center cursor-pointer group">
+                  <img
+                    src={house.img}
+                    alt={house.name}
+                    className="w-64 h-64 drop-shadow-xl mb-4 transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="opacity-100">
+                    <h2 className="text-2xl font-bold text-white mb-1">{house.name}</h2>
+                    <p className="text-white text-sm leading-relaxed">{house.text}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* RIGHT: imagen houses-damage */}
+          <div className="w-full flex items-center justify-center">
+            <div className="relative w-full max-w-[700px] h-[60vh] md:h-[70vh] rounded overflow-hidden">
+              <Image
+                src="/houses-damage.png"
+                alt="houses damage"
+                fill
+                style={{ objectFit: 'contain', objectPosition: 'center' }}
+                className="opacity-90"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </main>
 

@@ -123,3 +123,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Glow animation for header text */
+@keyframes glow {
+  0% { text-shadow: 0 0 6px rgba(255,255,255,0.35); }
+  50% { text-shadow: 0 0 20px rgba(255,255,255,0.95); }
+  100% { text-shadow: 0 0 6px rgba(255,255,255,0.35); }
+}
+.animate-glow {
+  animation: glow 2.5s ease-in-out infinite;
+}

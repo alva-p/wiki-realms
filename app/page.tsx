@@ -33,14 +33,9 @@ export default function Home() {
         <section className="relative pt-32 pb-4 px-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
           <div className="max-w-4xl mx-auto relative z-10 text-center">
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4 animate-fade-in">
-              <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent drop-shadow-2xl animate-pulse">
-                Wiki
-              </span>
-            
-              <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent drop-shadow-2xl animate-pulse">
-                Realms
-              </span>
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4 animate-fade-in group cursor-pointer">
+              <span className="text-white drop-shadow-2xl animate-glow transition-colors duration-200 group-hover:text-gray-400">Wiki</span>
+              <span className="text-white drop-shadow-2xl animate-glow transition-colors duration-200 group-hover:text-gray-400">Realms</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-16 max-w-2xl mx-auto animate-fade-in-delay">
               Discover the universe of REALMS, a Web3 MMORPG
@@ -68,7 +63,8 @@ export default function Home() {
                 { title: 'Maps', href: '/maps' },
                 { title: 'Missions', href: '/missions' },
                 { title: 'Game Modes', href: '/gamemodes' },
-                { title: 'Team', href: '/team' }
+                { title: 'Team', href: '/team' },
+                {title: 'Last Sales', href: '/lastsales' },
               ].map((section, index) => (
                 <Link
                   key={section.title}

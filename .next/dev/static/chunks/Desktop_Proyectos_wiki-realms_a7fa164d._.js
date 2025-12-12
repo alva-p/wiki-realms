@@ -339,10 +339,10 @@ function Home() {
                                 className: "max-w-4xl mx-auto relative z-10 text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Proyectos$2f$wiki$2d$realms$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4 animate-fade-in",
+                                        className: "text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4 animate-fade-in group cursor-pointer",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Proyectos$2f$wiki$2d$realms$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent drop-shadow-2xl animate-pulse",
+                                                className: "text-white drop-shadow-2xl animate-glow transition-colors duration-200 group-hover:text-gray-400",
                                                 children: "Wiki"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
@@ -350,11 +350,11 @@ function Home() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Proyectos$2f$wiki$2d$realms$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent drop-shadow-2xl animate-pulse",
+                                                className: "text-white drop-shadow-2xl animate-glow transition-colors duration-200 group-hover:text-gray-400",
                                                 children: "Realms"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                                                lineNumber: 41,
+                                                lineNumber: 38,
                                                 columnNumber: 15
                                             }, this)
                                         ]
@@ -368,7 +368,7 @@ function Home() {
                                         children: "Discover the universe of REALMS, a Web3 MMORPG"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 40,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -393,7 +393,7 @@ function Home() {
                                     children: "Explore the universe of Realms"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Proyectos$2f$wiki$2d$realms$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -442,6 +442,10 @@ function Home() {
                                         {
                                             title: 'Team',
                                             href: '/team'
+                                        },
+                                        {
+                                            title: 'Last Sales',
+                                            href: '/lastsales'
                                         }
                                     ].map((section, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Proyectos$2f$wiki$2d$realms$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Proyectos$2f$wiki$2d$realms$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: section.href,
@@ -454,28 +458,28 @@ function Home() {
                                                 children: section.title
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                                                lineNumber: 84,
+                                                lineNumber: 80,
                                                 columnNumber: 19
                                             }, this)
                                         }, section.title, false, {
                                             fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 69,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 53,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                            lineNumber: 53,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                        lineNumber: 52,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, this)
                 ]
@@ -488,12 +492,12 @@ function Home() {
                 className: "relative z-20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Proyectos$2f$wiki$2d$realms$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Proyectos$2f$wiki$2d$realms$2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                     fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                    lineNumber: 104,
+                    lineNumber: 100,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/Proyectos/wiki-realms/app/page.tsx",
-                lineNumber: 103,
+                lineNumber: 99,
                 columnNumber: 7
             }, this)
         ]

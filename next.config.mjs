@@ -5,6 +5,20 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ipfs.roninrealms.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.ipfs.w3s.link',
+      },
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+      },
+    ],
   },
 }
 
