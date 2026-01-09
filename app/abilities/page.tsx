@@ -10,7 +10,21 @@ export default function AbilitiesPage() {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null)
   const [selectedCategory, setSelectedCategory] = useState<Ability['category']>('attack')
 
-  const categories: Ability['category'][] = ['attack', 'defense', 'vitality', 'precision', 'restoration', 'speed', 'ferocity']
+  const categories: Ability['category'][] = ['attack', 'defense', 'vitality', 'precision', 'restoration', 'speed', 'ferocity', 'retaliation', 'leech', 'haste']
+
+  // Category color mapping for selected ability display
+  const categoryColors: Record<Ability['category'], { text: string; bg: string; border: string }> = {
+    attack: { text: 'text-amber-600', bg: 'bg-amber-600/20', border: 'border-amber-600/30' },
+    defense: { text: 'text-blue-500', bg: 'bg-blue-500/20', border: 'border-blue-500/30' },
+    vitality: { text: 'text-red-500', bg: 'bg-red-500/20', border: 'border-red-500/30' },
+    precision: { text: 'text-yellow-400', bg: 'bg-yellow-400/20', border: 'border-yellow-400/30' },
+    restoration: { text: 'text-green-500', bg: 'bg-green-500/20', border: 'border-green-500/30' },
+    speed: { text: 'text-cyan-400', bg: 'bg-cyan-400/20', border: 'border-cyan-400/30' },
+    ferocity: { text: 'text-violet-500', bg: 'bg-violet-500/20', border: 'border-violet-500/30' },
+    retaliation: { text: 'text-orange-200', bg: 'bg-orange-200/20', border: 'border-orange-200/30' },
+    leech: { text: 'text-rose-800', bg: 'bg-rose-800/20', border: 'border-rose-800/30' },
+    haste: { text: 'text-pink-600', bg: 'bg-pink-600/20', border: 'border-pink-600/30' },
+  }
 
   return (
     <div className="relative min-h-screen flex flex-col bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
@@ -94,6 +108,9 @@ export default function AbilitiesPage() {
                       {ability.stats.accuracy && '% ACC'}
                       {ability.stats.healing && ' HP'}
                       {ability.stats.speed && '% SPD'}
+                      {ability.stats.retaliation && '% RET'}
+                      {ability.stats.leech && '% LEECH'}
+                      {ability.stats.haste && '% HASTE'}
                     </div>
                   </div>
                 )}
@@ -104,11 +121,11 @@ export default function AbilitiesPage() {
 
         {/* Selected Ability Description */}
         {selectedAbility && (
-          <div className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-md rounded-xl p-8 border border-amber-500/30 shadow-2xl">
+          <div className={`bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-md rounded-xl p-8 border ${categoryColors[selectedAbility.category].border} shadow-2xl`}>
             <div className="flex flex-col md:flex-row gap-6">
               {/* Large Ability Preview */}
               <div className="flex-shrink-0">
-                <div className="relative w-[124px] h-[124px] bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg overflow-hidden border-2 border-amber-500">
+                <div className={`relative w-[124px] h-[124px] bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg overflow-hidden border-2 ${categoryColors[selectedAbility.category].border.replace('/30', '')}`}>
                   {selectedAbility.image ? (
                     <Image 
                       src={selectedAbility.image} 
@@ -128,13 +145,13 @@ export default function AbilitiesPage() {
               {/* Ability Details */}
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
-                  <h2 className="text-3xl font-bold text-amber-400">{selectedAbility.name}</h2>
-                  <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-xs font-semibold uppercase">
+                  <h2 className={`text-3xl font-bold ${categoryColors[selectedAbility.category].text}`}>{selectedAbility.name}</h2>
+                  <span className={`px-3 py-1 ${categoryColors[selectedAbility.category].bg} ${categoryColors[selectedAbility.category].text} rounded-full text-xs font-semibold uppercase`}>
                     {categoryNames[selectedAbility.category]}
                   </span>
                 </div>
 
-                <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                <p className={`${categoryColors[selectedAbility.category].text} text-lg leading-relaxed mb-4 opacity-80`}>
                   {selectedAbility.description}
                 </p>
 
@@ -142,9 +159,9 @@ export default function AbilitiesPage() {
                 {selectedAbility.stats && (
                   <div className="flex flex-wrap gap-3">
                     {Object.entries(selectedAbility.stats).map(([stat, value]) => (
-                      <div key={stat} className="bg-gray-700/50 px-4 py-2 rounded-lg">
+                      <div key={stat} className={`${categoryColors[selectedAbility.category].bg} px-4 py-2 rounded-lg`}>
                         <span className="text-gray-400 text-sm capitalize">{stat}: </span>
-                        <span className="text-amber-400 font-bold">{value}{stat === 'health' || stat === 'accuracy' || stat === 'speed' ? '%' : ''}</span>
+                        <span className={`${categoryColors[selectedAbility.category].text} font-bold`}>{value}{stat === 'health' || stat === 'accuracy' || stat === 'speed' ? '%' : ''}</span>
                       </div>
                     ))}
                   </div>

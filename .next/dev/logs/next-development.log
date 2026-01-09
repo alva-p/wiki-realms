@@ -1,9 +1,0 @@
-[00:00:02.625] Server  LOG      ✓ Ready in 1697ms
-[00:00:05.698] Server  LOG      ○ Compiling /abilities ...
-[00:00:07.544] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.826] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. demon
-[00:00:07.826] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:07.826] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/abilities","route":"/abilities"}
-[00:00:07.826] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/abilities color: rgb(120, 120, 120) color: inherit {"dp":"/abilities","o":"http://localhost:3000/abilities","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1766144719740}
-[00:00:25.847] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. lightningstrike
-[00:00:59.061] Server  LOG      ✓ Compiled in 317ms
