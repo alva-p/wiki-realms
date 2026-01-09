@@ -7,12 +7,12 @@ export default function GameModes() {
     <div className="min-h-screen bg-background flex flex-col">
       <Navigation />
 
-      {/* Igual que NFTs: FULLSCREEN GRID */}
-      <main className="flex-1 grid grid-cols-1 md:grid-cols-2">
+      {/* FULLSCREEN HORIZONTAL GRID - 3 sections */}
+      <main className="flex-1 grid grid-cols-3">
 
         {/* PVP Extraction Mode */}
         <section 
-          className="flex-1 flex items-center justify-center text-center p-8 relative"
+          className="flex items-center justify-center text-center p-8 relative"
         >
           {/* Video de fondo */}
           <video
@@ -40,7 +40,7 @@ export default function GameModes() {
 
         {/* PVE Mines Hiroba */}
         <section 
-          className="flex-1 flex items-center justify-center text-center p-8 relative"
+          className="flex items-center justify-center text-center p-8 relative"
           style={{
             backgroundImage: 'url(/mines.png)',
             backgroundSize: 'cover',
@@ -55,6 +55,26 @@ export default function GameModes() {
             <p className="text-white/90 mt-4 max-w-sm mx-auto">
               Strategic player vs environment exploration in the mysterious and 
               challenging mines of Hiroba.
+            </p>
+          </div>
+        </section>
+
+        {/* 1v1 */}
+        <section 
+          className="flex items-center justify-center text-center p-8 relative"
+          style={{
+            backgroundImage: 'url(/1v1.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        >
+          <div className="absolute inset-0 bg-black/50 z-10" />
+
+          <div className="relative z-20 max-w-md mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-white">1v1 Duel</h2>
+            <p className="text-white text-lg">(PVP)</p>
+            <p className="text-white/90 mt-4 max-w-sm mx-auto">
+              Intense one-on-one battles where players test their skills and strategies against each other.
             </p>
           </div>
         </section>

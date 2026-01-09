@@ -19,6 +19,7 @@ export function Navigation() {
     { href: '/maps', label: 'Maps', icon: '🗺️' },
     { href: '/missions', label: 'Missions', icon: '🎯' },
     { href: '/gamemodes', label: 'Game Modes', icon: '🎮' },
+    { href: '/lastsales', label: 'Last Sales', icon: '💰' },
     { href: '/team', label: 'Team', icon: '👥' },
   ]
 
