@@ -1,6 +1,6 @@
  'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
@@ -9,6 +9,16 @@ import { abilities, categoryNames, categoryDescriptions, getAbilitiesByCategory,
 export default function AbilitiesPage() {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null)
   const [selectedCategory, setSelectedCategory] = useState<Ability['category']>('attack')
+  const descriptionRef = useRef<HTMLDivElement>(null)
+
+  // Scroll to description when ability is selected
+  useEffect(() => {
+    if (selectedAbility && descriptionRef.current) {
+      setTimeout(() => {
+        descriptionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }, 100)
+    }
+  }, [selectedAbility])
 
   const categories: Ability['category'][] = ['attack', 'defense', 'vitality', 'precision', 'restoration', 'speed', 'ferocity', 'retaliation', 'leech', 'haste']
 
@@ -121,8 +131,10 @@ export default function AbilitiesPage() {
 
         {/* Selected Ability Description */}
         {selectedAbility && (
-          <div className={`bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-md rounded-xl p-8 border ${categoryColors[selectedAbility.category].border} shadow-2xl`}>
-            <div className="flex flex-col md:flex-row gap-6">
+          <div 
+            ref={descriptionRef}
+            className={`bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-md rounded-xl p-8 border ${categoryColors[selectedAbility.category].border} shadow-2xl animate-in fade-in slide-in-from-top-4 duration-300`}
+          >            <div className="flex flex-col md:flex-row gap-6">
               {/* Large Ability Preview */}
               <div className="flex-shrink-0">
                 <div className={`relative w-[124px] h-[124px] bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg overflow-hidden border-2 ${categoryColors[selectedAbility.category].border.replace('/30', '')}`}>
