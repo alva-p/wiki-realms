@@ -42,26 +42,26 @@ export const abilities: Ability[] = [
     traits: [
   {
     traitType: 'emblem',        
-    traitValue: 'Sapphire Sosen',       
+    traitValue: 'Sapphire sosen',       
     image: '/traits/emblem/sapphiresosen.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Sosen'    
   },
   {
     traitType: 'emblem',        
     traitValue: 'Ruby Sosen',       
-    image: '/traits/emblem/rubySosen.png',            
+    image: '/traits/emblem/rubysosen.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Sosen'    
   },
   {
     traitType: 'emblem',        
-    traitValue: 'Esmerald Sosen',       
-    image: '/traits/emblem/esmeraldSosen.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Esmerald%20Sosen'    
+    traitValue: 'emeraldSosen',       
+    image: '/traits/emblem/esmeraldsosen.png',            
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Emerald%20Sosen'    
   },
   {
     traitType: 'emblem',        
     traitValue: 'Topaz Sosen',       
-    image: '/traits/emblem/topazSosen.png',            
+    image: '/traits/emblem/topazsosen.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Sosen'    
   },
 ]
@@ -77,25 +77,25 @@ export const abilities: Ability[] = [
   {
     traitType: 'emblem',        
     traitValue: 'Ruby Kuwagata',       
-    image: '/traits/emblem/rubyKuwagata.png',            
+    image: '/traits/emblem/rubykuwagata.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Kuwagata'    
   },
    {
     traitType: 'emblem',        
-    traitValue: 'Esmerald Kuwagata',       
-    image: '/traits/emblem/esmeraldKuwagata.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Esmerald%20Kuwagata'    
+    traitValue: 'Emerald Kuwagata',       
+    image: '/traits/emblem/esmeraldkuwagata.png',            
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Emerald%20Kuwagata'    
   },
    {
     traitType: 'emblem',        
     traitValue: 'Sapphire Kuwagata',       
-    image: '/traits/emblem/sapphireKuwagata.png',            
+    image: '/traits/emblem/sapphirekuwagata.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Kuwagata'    
   },
    {
     traitType: 'emblem',        
     traitValue: 'Topaz Kuwagata',       
-    image: '/traits/emblem/topazKuwagata.png',            
+    image: '/traits/emblem/topazkuwagata.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Kuwagata'    
   },
 ]
@@ -111,27 +111,27 @@ export const abilities: Ability[] = [
       {
     traitType: 'emblem',        
     traitValue: 'Topaz Tsuki',       
-    image: '/traits/emblem/topazTsuki.png',            
+    image: '/traits/emblem/topaztsuki.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Tsuki'    
   },
   {
     traitType: 'emblem',        
     traitValue: 'Sapphire Mikadzuki',       
-    image: '/traits/emblem/sapphireMikadzuki.png',            
+    image: '/traits/emblem/sapphiremikadzuki.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Mikadzuki'    
   },
   {
     traitType: 'emblem',        
     traitValue: 'Ruby Tsuki',       
-    image: '/traits/emblem/rubyTsuki.png',            
+    image: '/traits/emblem/rubytsuki.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Tsuki'    
   },
   {
     
     traitType: 'emblem',        
-    traitValue: 'Esmerald Tsuki',       
-    image: '/traits/emblem/esmeraldTsuki.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Esmerald%20Tsuki'    
+    traitValue: 'emeraldTsuki',       
+    image: '/traits/emblem/esmeraldtsuki.png',            
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Emerald%20Tsuki'    
   },
   
     ]
@@ -175,22 +175,22 @@ export const abilities: Ability[] = [
       {
     
     traitType: 'emblem',        
-    traitValue: 'Esmerald Shiryoku',       
-    image: '/traits/emblem/esmeraldShiryoku.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Esmerald%20Shiryoku'    
+    traitValue: 'emeraldShiryoku',       
+    image: '/traits/emblem/esmeraldshiryoku.png',            
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Emerald%20Shiryoku'    
   },
   {
     
     traitType: 'emblem',        
     traitValue: 'Topaz Shiryoku',       
-    image: '/traits/emblem/topazShiryoku.png',            
+    image: '/traits/emblem/topazshiryoku.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Shiryoku'    
   },
   {
     
     traitType: 'emblem',        
     traitValue: 'Ruby Shiryoku',       
-    image: '/traits/emblem/rubyShiryoku.png',            
+    image: '/traits/emblem/rubyshiryoku.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Shiryoku'    
   },
     ]
@@ -227,7 +227,7 @@ export const abilities: Ability[] = [
   {
     traitType: 'snout',
     traitValue: 'Dragon Trainer',
-    image: '/traits/snout/dragonTrainer.png',
+    image: '/traits/snout/dragontrainer.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Snout=Dragon%20Trainer'
   },
     ]
@@ -242,28 +242,28 @@ export const abilities: Ability[] = [
       {
     traitType: 'emblem',        
     traitValue: 'Topaz Sai',       
-    image: '/traits/emblem/topazSai.png',            
+    image: '/traits/emblem/topazsai.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Sai'    
   },
   {
     
     traitType: 'emblem',        
-    traitValue: 'Esmerald Sai',       
-    image: '/traits/emblem/esmeraldSai.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Esmerald%20Sai'    
+    traitValue: 'emeraldSai',       
+    image: '/traits/emblem/esmeraldsai.png',            
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Emerald%20Sai'    
   },
   {
     
     traitType: 'emblem',        
     traitValue: 'Ruby Sai',       
-    image: '/traits/emblem/rubySai.png',            
+    image: '/traits/emblem/rubysai.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Sai'    
   },
   {
     
     traitType: 'emblem',        
     traitValue: 'Sapphire Sai',       
-    image: '/traits/emblem/sapphireSai.png',            
+    image: '/traits/emblem/sapphiresai.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Sai'    
   },
     ]
@@ -729,9 +729,9 @@ export const abilities: Ability[] = [
   },
   {
     traitType: 'emblem',
-    traitValue: 'Esmerald Tsubasa',
+    traitValue: 'emeraldTsubasa',
     image: '/traits/emblem/esmeraldtsubasa.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Esmerald%20Tsubasa'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Emerald%20Tsubasa'
   },
 
     ]
