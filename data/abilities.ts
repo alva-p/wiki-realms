@@ -43,7 +43,7 @@ export const abilities: Ability[] = [
   {
     traitType: 'emblem',        
     traitValue: 'Sapphire Sosen',       
-    image: '/traits/emblem/sapphireSosen.png',            
+    image: '/traits/emblem/sapphiresosen.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Sosen'    
   },
   {
@@ -146,21 +146,21 @@ export const abilities: Ability[] = [
       {
     traitType: 'emblem',        
     traitValue: 'Ruby Shinzo',       
-    image: '/traits/emblem/rubyShinzo.png',            
+    image: '/traits/emblem/rubyshinzo.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Shinzo'    
   },
   {
     
     traitType: 'emblem',        
     traitValue: 'Sapphire Shinzo',       
-    image: '/traits/emblem/sapphireShinzo.png',            
+    image: '/traits/emblem/sapphireshinzo.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Shinzo'    
   },
   {
     
     traitType: 'emblem',        
     traitValue: 'Topaz Shinzo',       
-    image: '/traits/emblem/topazShinzo.png',            
+    image: '/traits/emblem/topazshinzo.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Shinzo'    
   },
     ]
