@@ -41,11 +41,11 @@ export const abilities: Ability[] = [
     description: 'stab the enemy in front of you poisoning them on a successful hit ',
     traits: [
   {
-    traitType: 'emblem',        
-    traitValue: 'Sapphire Sosen',       
-    image: '/traits/emblem/sapphiresosen.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Sosen'    
-  },
+  traitType: 'emblem',        
+  traitValue: 'Sapphire Sosen',       
+  image: '/traits/emblem/SapphireSosen.png',  // Fixed case          
+  marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Sosen'    
+},
   {
     traitType: 'emblem',        
     traitValue: 'Ruby Sosen',       
@@ -150,12 +150,11 @@ export const abilities: Ability[] = [
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Shinzo'    
   },
   {
-    
-    traitType: 'emblem',        
-    traitValue: 'Sapphire Shinzo',       
-    image: '/traits/emblem/sapphireshinzo.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Shinzo'    
-  },
+  traitType: 'emblem',        
+  traitValue: 'Sapphire Shinzo',       
+  image: '/traits/emblem/sapphireShinzo.png',  // Fixed case          
+  marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Shinzo'    
+},
   {
     
     traitType: 'emblem',        
@@ -179,20 +178,18 @@ export const abilities: Ability[] = [
     image: '/traits/emblem/esmeraldshiryoku.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Emerald%20Shiryoku'    
   },
+ {
+  traitType: 'emblem',        
+  traitValue: 'Topaz Shiryoku',       
+  image: '/traits/emblem/topazShiryoku.png',  // Fixed case          
+  marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Shiryoku'    
+},
   {
-    
-    traitType: 'emblem',        
-    traitValue: 'Topaz Shiryoku',       
-    image: '/traits/emblem/topazshiryoku.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Shiryoku'    
-  },
-  {
-    
-    traitType: 'emblem',        
-    traitValue: 'Ruby Shiryoku',       
-    image: '/traits/emblem/rubyshiryoku.png',            
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Shiryoku'    
-  },
+  traitType: 'emblem',        
+  traitValue: 'Ruby Shiryoku',       
+  image: '/traits/emblem/rubyShiryoku.png',  // Fixed case          
+  marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Shiryoku'    
+},
     ]
    
   },
@@ -820,11 +817,11 @@ export const abilities: Ability[] = [
     description: 'Launch a volley of projectiles that automatically home in when a viable target is present.',
     traits: [
       {
-    traitType: 'horns',
-    traitValue: 'Aoi Hono',
-    image: '/traits/horns/aoihono.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Horns=Aoi%20Hono'
-  },
+  traitType: 'horns',
+  traitValue: 'Aoi Hono',
+  image: '/traits/horns/aoiHono.png',  // Fixed case
+  marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Horns=Aoi%20Hono'
+},
     ]
   },
   {
@@ -835,11 +832,11 @@ export const abilities: Ability[] = [
     description: 'Rapidly fire three arrows at your target.',
     traits: [
       {
-    traitType: 'horns',
-    traitValue: 'Kojin Horns',
-    image: '/traits/horns/kojinhorns.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Horns=Kojin%20Horns'
-  },
+  traitType: 'horns',
+  traitValue: 'Kojin Horns',
+  image: '/traits/horns/kojinHorns.png',  // Fixed case
+  marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Horns=Kojin%20Horns'
+},
     ]
   },
   {
