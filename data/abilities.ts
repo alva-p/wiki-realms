@@ -712,25 +712,25 @@ export const abilities: Ability[] = [
       {
     traitType: 'emblem',
     traitValue: 'Ruby Tsubasa',
-    image: '/traits/emblem/rubyTsubasa.png',
+    image: '/traits/emblem/rubytsubasa.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Ruby%20Tsubasa'
   },
   {
     traitType: 'emblem',
     traitValue: 'Topaz Tsubasa',
-    image: '/traits/emblem/topazTsubasa.png',
+    image: '/traits/emblem/topaztsubasa.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Topaz%20Tsubasa'
   },
   {
     traitType: 'emblem',
     traitValue: 'Sapphire Tsubasa',
-    image: '/traits/emblem/sapphireTsubasa.png',
+    image: '/traits/emblem/sapphiretsubasa.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Tsubasa'
   },
   {
     traitType: 'emblem',
     traitValue: 'Esmerald Tsubasa',
-    image: '/traits/emblem/esmeraldTsubasa.png',
+    image: '/traits/emblem/esmeraldtsubasa.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Esmerald%20Tsubasa'
   },
 
