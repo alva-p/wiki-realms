@@ -762,7 +762,7 @@ export const abilities: Ability[] = [
       {
     traitType: 'snout',
     traitValue: 'Arachno Snout',
-    image: '/traits/snout/arachnoSnout.png',
+    image: '/traits/snout/arachnosnout.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Snout=Arachno%20Snout'
   },
     ]
@@ -777,7 +777,7 @@ export const abilities: Ability[] = [
       {
     traitType: 'eyes',
     traitValue: 'Steampunk Eyes',
-    image: '/traits/eyes/steampunkEyes.png',
+    image: '/traits/eyes/steampunkeyes.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Eyes=Steampunk%20Eyes'
   },
     ]
@@ -792,7 +792,7 @@ export const abilities: Ability[] = [
       {
     traitType: 'eyes',
     traitValue: 'Arachno Eyes',
-    image: '/traits/eyes/arachnoEyes.png',
+    image: '/traits/eyes/arachnoeyes.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Eyes=Arachno%20Eyes'
   },
     ]
@@ -837,7 +837,7 @@ export const abilities: Ability[] = [
       {
     traitType: 'horns',
     traitValue: 'Kojin Horns',
-    image: '/traits/horns/kojinHorns.png',
+    image: '/traits/horns/kojinhorns.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Horns=Kojin%20Horns'
   },
     ]
@@ -1022,7 +1022,7 @@ export const abilities: Ability[] = [
       {
     traitType: 'eyes',
     traitValue: 'Hiryu Eyes',
-    image: '/traits/eyes/hiryuEyes.png',
+    image: '/traits/eyes/hiryueyes.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Eyes=Hiryu%20Eyes'
   },
     ]
@@ -1037,7 +1037,7 @@ export const abilities: Ability[] = [
       {
     traitType: 'eyes',
     traitValue: 'Enryu Eyes',
-    image: '/traits/eyes/enryuEyes.png',
+    image: '/traits/eyes/enryueyes.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Eyes=Enryu%20Eyes'
   },
     ]
