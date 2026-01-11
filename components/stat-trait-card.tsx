@@ -1,5 +1,6 @@
 'use client'
 
+// Force rebuild v2
 import Image from 'next/image'
 import { StatTrait, statNames } from '@/data/stat-traits'
 
@@ -58,8 +59,8 @@ export function StatTraitCard({ trait, categoryColor }: StatTraitCardProps) {
 
       {/* Stat Badge */}
       <div className="flex justify-center">
-        <div className={`${categoryColor.bg} ${categoryColor.text} text-xs px-3 py-1.5 rounded-full font-bold`}>
-          +{trait.statValue}% {statNames[trait.stat]}
+        <div className={`${categoryColor.bg} ${categoryColor.text} text-xs px-3 py-1.5 rounded-full font-bold font-sans`} style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+          {`+${trait.statValue}% ${statNames[trait.stat]}`}
         </div>
       </div>
     </div>
