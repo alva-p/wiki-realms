@@ -822,7 +822,7 @@ export const abilities: Ability[] = [
       {
     traitType: 'horns',
     traitValue: 'Aoi Hono',
-    image: '/traits/horns/aoiHono.png',
+    image: '/traits/horns/aoihono.png',
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Horns=Aoi%20Hono'
   },
     ]
