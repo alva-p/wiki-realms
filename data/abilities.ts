@@ -42,7 +42,7 @@ export const abilities: Ability[] = [
     traits: [
   {
     traitType: 'emblem',        
-    traitValue: 'Sapphire sosen',       
+    traitValue: 'Sapphire Sosen',       
     image: '/traits/emblem/sapphiresosen.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Sapphire%20Sosen'    
   },
@@ -54,7 +54,7 @@ export const abilities: Ability[] = [
   },
   {
     traitType: 'emblem',        
-    traitValue: 'emeraldSosen',       
+    traitValue: 'emerald Sosen',       
     image: '/traits/emblem/esmeraldsosen.png',            
     marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Emblem=Emerald%20Sosen'    
   },
