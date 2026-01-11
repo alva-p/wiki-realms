@@ -178,6 +178,52 @@ export default function AbilitiesPage() {
                     ))}
                   </div>
                 )}
+
+                {/* NFT Traits Display */}
+                {selectedAbility.traits && selectedAbility.traits.length > 0 && (
+                  <div className="mt-6 pt-6 border-t border-gray-700">
+                    <h3 className="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-4">NFT Traits that grant this ability</h3>
+                    <div className="flex flex-wrap gap-4">
+                      {selectedAbility.traits.map((trait, index) => (
+                        <a
+                          key={index}
+                          href={trait.marketplaceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group flex items-center gap-3 bg-gray-800/80 hover:bg-gray-700/80 border border-gray-600 hover:border-amber-500/50 rounded-lg p-3 transition-all duration-200"
+                        >
+                          {/* Trait Image */}
+                          <div className="relative w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg overflow-hidden flex-shrink-0">
+                            {trait.image ? (
+                              <Image 
+                                src={trait.image} 
+                                alt={trait.traitValue} 
+                                width={48}
+                                height={48}
+                                className="object-contain"
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center text-xl">🎭</div>
+                            )}
+                          </div>
+                          
+                          {/* Trait Info */}
+                          <div className="flex flex-col">
+                            <span className="text-gray-500 text-xs uppercase tracking-wide">{trait.traitType}</span>
+                            <span className="text-white font-semibold group-hover:text-amber-400 transition-colors">{trait.traitValue}</span>
+                          </div>
+                          
+                          {/* Link Icon */}
+                          <div className="text-gray-500 group-hover:text-amber-400 transition-colors ml-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
