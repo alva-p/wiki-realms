@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { abilities, categoryNames, categoryDescriptions, getAbilitiesByCategory, type Ability } from '@/data/abilities'
+import { getWingsByStat, getAurasByStat } from '@/data/stat-traits'
+import { StatTraitCard } from '@/components/stat-trait-card'
 
 export default function AbilitiesPage() {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null)
@@ -233,6 +235,56 @@ export default function AbilitiesPage() {
         {!selectedAbility && (
           <div className="text-center py-12">
             <p className="text-gray-500 text-lg">Select an ability to view its details</p>
+          </div>
+        )}
+
+        {/* Wings Section */}
+        {getWingsByStat(selectedCategory).length > 0 && (
+          <div className="mt-16">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-3xl">🪽</span>
+              <h2 className="text-2xl font-bold text-purple-400">Wings</h2>
+              <span className="text-xs bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full border border-purple-500/30">
+                Trait Bonus
+              </span>
+            </div>
+            <p className="text-sm text-gray-400 mb-4">
+              Wings are NFT traits that grant passive stat bonuses. They don&apos;t provide abilities, only stats.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              {getWingsByStat(selectedCategory).map((trait) => (
+                <StatTraitCard 
+                  key={trait.id} 
+                  trait={trait} 
+                  categoryColor={categoryColors[selectedCategory]}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Auras Section */}
+        {getAurasByStat(selectedCategory).length > 0 && (
+          <div className="mt-12">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-3xl">✨</span>
+              <h2 className="text-2xl font-bold text-fuchsia-400">Auras</h2>
+              <span className="text-xs bg-fuchsia-500/20 text-fuchsia-300 px-2 py-1 rounded-full border border-fuchsia-500/30">
+                Trait Bonus
+              </span>
+            </div>
+            <p className="text-sm text-gray-400 mb-4">
+              Auras are NFT traits that grant passive stat bonuses. They don&apos;t provide abilities, only stats.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              {getAurasByStat(selectedCategory).map((trait) => (
+                <StatTraitCard 
+                  key={trait.id} 
+                  trait={trait} 
+                  categoryColor={categoryColors[selectedCategory]}
+                />
+              ))}
+            </div>
           </div>
         )}
       </main>
