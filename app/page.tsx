@@ -65,6 +65,8 @@ export default function Home() {
                 { title: 'Game Modes', href: '/gamemodes' },
                 { title: 'Team', href: '/team' },
                 {title: 'Last Sales', href: '/lastsales' },
+                { title: 'Unreal Wednesday', href: '/unrealwednesday' },
+                { title: 'Social Media', href: '/socialmedia' },
               ].map((section, index) => (
                 <Link
                   key={section.title}

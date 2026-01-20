@@ -21,6 +21,8 @@ export function Navigation() {
     { href: '/gamemodes', label: 'Game Modes', icon: '🎮' },
     { href: '/lastsales', label: 'Last Sales', icon: '💰' },
     { href: '/team', label: 'Team', icon: '👥' },
+    { href: '/unrealwednesday', label: 'Unreal Wednesday', icon: '🖥️' },
+    { href: '/socialmedia', label: 'Social Media', icon: '📱' },
   ]
 
   return (
