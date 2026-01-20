@@ -3,7 +3,7 @@ import { fetchOpenSeaSales } from './lastsales'
 
 export async function readSalesFromDb() {
   const rows = await prisma.sale.findMany({ orderBy: { date: 'desc' }, take: 5000 })
-  return rows.map((r) => ({
+  return rows.map((r: typeof rows[number]) => ({
     id: r.id,
     collection: r.collection,
     tokenId: r.tokenId || undefined,
