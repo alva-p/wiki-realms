@@ -1,81 +1,144 @@
- 'use client'
+'use client'
 
 import Image from 'next/image'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 
-export default function MissionsPage() {
+export default function SocialMediaPage() {
   return (
-    <div className="relative min-h-screen flex flex-col">
+    <div className="relative min-h-screen flex flex-col overflow-hidden">
       <Navigation />
 
-      {/* Imagen de fondo decorativa para Social Media */}
-      <div className="absolute inset-0 pointer-events-none flex items-center justify-center z-0">
-        <div className="relative w-full h-full">
-          <Image
-            src="/socialmedia.jpg"
-            alt="Social Media Background"
-            fill
-            style={{ objectFit: 'contain', objectPosition: 'center', maxWidth: '60vw', maxHeight: '40vh', left: '50%', top: '60%', transform: 'translate(-50%, -50%)' }}
-            className="opacity-40"
-            priority
-          />
-        </div>
+      {/* Imagen de fondo */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/fondo2.jpeg"
+          alt="Background"
+          fill
+          style={{ objectFit: 'cover' }}
+          className="opacity-60"
+          priority
+        />
+        {/* Overlay oscuro para mejor contraste */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
       </div>
 
-      <main className="relative z-10 flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16 w-full">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Social Media
+      {/* Efectos decorativos de fondo */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-[1]">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-600/30 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-600/20 rounded-full blur-[150px]" />
+      </div>
+
+      <main className="relative z-10 flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16 w-full">
+        <div className="text-center w-full max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-500">
+            CONNECT WITH US
           </h1>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-gray-300 mb-16 text-lg">
             Follow Realms on your favorite platforms and join our community!
           </p>
-          <div className="flex flex-wrap justify-center gap-8 mt-8 mb-12">
+
+          {/* Contenedor de Iconos Flotantes */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+
             {/* X (Twitter) */}
-            <a href="https://x.com/RealmsDotGame" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-2">
-              <span className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-black/60 border border-white/10 group-hover:border-amber-500/50 transition-all">
-                <svg width="36" height="36" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1187.6 0H885.7L600.2 410.6L314.3 0H0L462.7 668.2L0 1227H301.6L600.2 814.2L898.4 1227H1200L737.5 558.8L1187.6 0ZM301.6 111.2L600.2 523.6L898.4 111.2H301.6ZM301.6 1115.8L600.2 703.4L898.4 1115.8H301.6Z" fill="#fff" className="group-hover:fill-amber-500 transition-all"/>
+            <a
+              href="https://x.com/RealmsDotGame"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="float-animation delay-1 group"
+            >
+              <div className="icon-card glass p-8 rounded-3xl transition-all duration-300 w-28 h-28 md:w-32 md:h-32 flex items-center justify-center">
+                <svg className="w-10 h-10 md:w-12 md:h-12 fill-current group-hover:text-blue-400 transition-colors" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
-              </span>
-              <span className="text-white group-hover:text-amber-500 transition-all font-medium">X (Twitter)</span>
+              </div>
+              <span className="block mt-4 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity text-white">X (TWITTER)</span>
             </a>
+
             {/* Discord */}
-            <a href="https://discord.gg/n4zVPeAFwk" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-2">
-              <span className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-black/60 border border-white/10 group-hover:border-amber-500/50 transition-all">
-                <svg width="36" height="36" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M60.104 4.552A58.201 58.201 0 0 0 46.852.8a.112.112 0 0 0-.118.056c-2.05 3.652-4.34 8.41-5.953 12.19-7.13-1.07-14.1-1.07-21.13 0-1.62-3.78-3.92-8.538-5.95-12.19A.115.115 0 0 0 13.58.8a58.06 58.06 0 0 0-13.25 3.75.104.104 0 0 0-.048.041C-1.58 18.73-2.93 32.66-.9 46.46a.112.112 0 0 0 .04.073c5.56 4.08 10.97 6.56 16.32 8.2a.112.112 0 0 0 .123-.03c1.26-1.73 2.38-3.56 3.34-5.48a.112.112 0 0 0-.06-.154c-1.78-.68-3.48-1.5-5.13-2.42a.112.112 0 0 1-.011-.186c.345-.26.69-.53 1.02-.8a.112.112 0 0 1 .114-.013c10.8 4.94 22.47 4.94 33.22 0a.112.112 0 0 1 .115.012c.33.27.675.54 1.02.8a.112.112 0 0 1-.01.186c-1.65.93-3.35 1.75-5.13 2.43a.112.112 0 0 0-.06.153c.96 1.92 2.08 3.75 3.34 5.48a.112.112 0 0 0 .123.03c5.36-1.64 10.77-4.12 16.32-8.2a.112.112 0 0 0 .04-.073c2.14-15.13-1.18-29-7.92-41.87a.09.09 0 0 0-.05-.04ZM23.725 37.02c-3.18 0-5.78-2.92-5.78-6.5 0-3.58 2.58-6.5 5.78-6.5 3.22 0 5.8 2.94 5.78 6.5 0 3.58-2.58 6.5-5.78 6.5Zm23.55 0c-3.18 0-5.78-2.92-5.78-6.5 0-3.58 2.58-6.5 5.78-6.5 3.22 0 5.8 2.94 5.78 6.5 0 3.58-2.58 6.5-5.78 6.5Z" fill="#fff" className="group-hover:fill-amber-500 transition-all"/>
+            <a
+              href="https://discord.gg/n4zVPeAFwk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="float-animation delay-2 group"
+            >
+              <div className="icon-card glass p-8 rounded-3xl transition-all duration-300 w-28 h-28 md:w-32 md:h-32 flex items-center justify-center">
+                <svg className="w-10 h-10 md:w-12 md:h-12 fill-current group-hover:text-indigo-400 transition-colors" viewBox="0 0 24 24">
+                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.885 1.515.069.069 0 0 0-.032.027C.533 9.048-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.334-.956 2.419-2.156 2.419zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.334-.946 2.419-2.157 2.419z" />
                 </svg>
-              </span>
-              <span className="text-white group-hover:text-amber-500 transition-all font-medium">Discord</span>
+              </div>
+              <span className="block mt-4 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity text-white">DISCORD</span>
             </a>
+
             {/* YouTube */}
-            <a href="https://www.youtube.com/@RealmsDotGame" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-2">
-              <span className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-black/60 border border-white/10 group-hover:border-amber-500/50 transition-all">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="24" fill="#fff" fillOpacity="0"/>
-                  <path d="M39.5 15.5c-.5-1.9-2-3.4-3.9-3.9C32.1 11 24 11 24 11s-8.1 0-11.6.6c-1.9.5-3.4 2-3.9 3.9C7 19 7 24 7 24s0 5 1.5 8.5c.5 1.9 2 3.4 3.9 3.9C15.9 37 24 37 24 37s8.1 0 11.6-.6c1.9-.5 3.4-2 3.9-3.9C41 29 41 24 41 24s0-5-1.5-8.5ZM21 29.5v-11l9.5 5.5-9.5 5.5Z" fill="#fff" className="group-hover:fill-amber-500 transition-all"/>
+            <a
+              href="https://www.youtube.com/@RealmsDotGame"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="float-animation delay-3 group"
+            >
+              <div className="icon-card glass p-8 rounded-3xl transition-all duration-300 w-28 h-28 md:w-32 md:h-32 flex items-center justify-center">
+                <svg className="w-10 h-10 md:w-12 md:h-12 fill-current group-hover:text-red-500 transition-colors" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
-              </span>
-              <span className="text-white group-hover:text-amber-500 transition-all font-medium">YouTube</span>
+              </div>
+              <span className="block mt-4 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity text-white">YOUTUBE</span>
             </a>
+
             {/* Epic Games */}
-            <a href="https://store.epicgames.com/en-US/p/realms-42b0fb" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-2">
-              <span className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-black/60 border border-white/10 group-hover:border-amber-500/50 transition-all">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="36" height="36" rx="8" fill="#fff" fillOpacity="0"/>
-                  <path d="M8 4a4 4 0 0 0-4 4v20a4 4 0 0 0 4 4h20a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4H8Zm0 2h20a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm3 3v18h14V7H11Zm2 2h10v14H13V9Z" fill="#fff" className="group-hover:fill-amber-500 transition-all"/>
-                </svg>
-              </span>
-              <span className="text-white group-hover:text-amber-500 transition-all font-medium">Epic Games</span>
+            <a
+              href="https://store.epicgames.com/en-US/p/realms-42b0fb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="float-animation delay-4 group"
+            >
+              <div className="icon-card glass p-8 rounded-3xl transition-all duration-300 w-28 h-28 md:w-32 md:h-32 flex items-center justify-center">
+                <Image
+                  src="/epicgames.png"
+                  alt="Epic Games"
+                  width={48}
+                  height={48}
+                  className="w-10 h-10 md:w-12 md:h-12 invert brightness-0 invert group-hover:brightness-125 transition-all"
+                />
+              </div>
+              <span className="block mt-4 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity text-white">EPIC GAMES</span>
             </a>
+
           </div>
         </div>
       </main>
 
       <Footer />
 
+      {/* Estilos para animaciones */}
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-20px); }
+        }
+
+        .float-animation {
+          animation: float 4s ease-in-out infinite;
+        }
+
+        .delay-1 { animation-delay: 0.5s; }
+        .delay-2 { animation-delay: 1.2s; }
+        .delay-3 { animation-delay: 0.8s; }
+        .delay-4 { animation-delay: 1.5s; }
+
+        .glass {
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .icon-card:hover {
+          transform: scale(1.1) translateY(-10px);
+          box-shadow: 0 0 30px rgba(245, 158, 11, 0.4);
+          background: rgba(255, 255, 255, 0.1);
+        }
+      `}</style>
     </div>
   )
 }
