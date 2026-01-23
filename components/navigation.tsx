@@ -14,7 +14,6 @@ export function Navigation() {
     { href: '/houses', label: 'Houses', icon: '🏠' },
     { href: '/items', label: 'Items & Crafting', icon: '⚙️' },
     { href: '/abilities', label: 'Abilities', icon: '⚡' },
-    { href: '/classes', label: 'Classes', icon: '🛡️' },
     { href: '/aiagents', label: 'AI Agents', icon: '🤖' },
     { href: '/maps', label: 'Maps', icon: '🗺️' },
     { href: '/missions', label: 'Missions', icon: '🎯' },

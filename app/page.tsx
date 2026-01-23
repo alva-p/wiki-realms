@@ -58,7 +58,6 @@ export default function Home() {
                 { title: 'Houses', href: '/houses' },
                 { title: 'Items & Crafting', href: '/items' },
                 { title: 'Abilities', href: '/abilities' },
-                { title: 'Classes', href: '/classes' },
                 { title: 'AI Agents', href: '/aiagents' },
                 { title: 'Maps', href: '/maps' },
                 { title: 'Missions', href: '/missions' },
