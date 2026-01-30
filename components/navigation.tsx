@@ -31,9 +31,9 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-full overflow-hidden bg-gradient-to-br from-primary to-accent p-0.5 group-hover:glow-pulse transition-all">
-              <img src="/logo.jpg" alt="REALMS Logo" className="w-full h-full object-cover rounded-full" />
+              <img src="/kojins.png" alt="KOJIN Logo" className="w-full h-full object-cover rounded-full" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">REALMS</span>
+            <span className="text-xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">KOJIN</span>
           </Link>
 
           {/* Desktop Navigation */}

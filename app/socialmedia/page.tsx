@@ -35,7 +35,7 @@ export default function SocialMediaPage() {
             CONNECT WITH US
           </h1>
           <p className="text-gray-300 mb-16 text-lg">
-            Follow Realms on your favorite platforms and join our community!
+            Follow Kojin on your favorite platforms and join our community!
           </p>
 
           {/* Contenedor de Iconos Flotantes */}

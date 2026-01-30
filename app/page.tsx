@@ -35,10 +35,10 @@ export default function Home() {
           <div className="max-w-4xl mx-auto relative z-10 text-center">
             <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4 animate-fade-in group cursor-pointer">
               <span className="text-white drop-shadow-2xl animate-glow transition-colors duration-200 group-hover:text-gray-400">Wiki</span>
-              <span className="text-white drop-shadow-2xl animate-glow transition-colors duration-200 group-hover:text-gray-400">Realms</span>
+              <span className="text-white drop-shadow-2xl animate-glow transition-colors duration-200 group-hover:text-gray-400">KOJIN</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-16 max-w-2xl mx-auto animate-fade-in-delay">
-              Discover the universe of REALMS, a Web3 MMORPG
+              Discover the universe of KOJIN, a Web3 MMORPG
             </p>
           </div>
         </section>
@@ -47,7 +47,7 @@ export default function Home() {
         <section className="relative pt-2 pb-20 px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16 text-foreground animate-fade-in-delay-2">
-              Explore the universe of Realms
+              Explore the universe of Kojin
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
