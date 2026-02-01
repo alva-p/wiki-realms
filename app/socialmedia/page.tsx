@@ -43,7 +43,7 @@ export default function SocialMediaPage() {
 
             {/* X (Twitter) */}
             <a
-              href="https://x.com/RealmsDotGame"
+              href="https://x.com/Kojin_gg"
               target="_blank"
               rel="noopener noreferrer"
               className="float-animation delay-1 group"

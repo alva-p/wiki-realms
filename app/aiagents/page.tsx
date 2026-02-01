@@ -16,7 +16,7 @@ export default function AIAgents() {
             AI Agents
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Learn how AI Agents will work in Realms, explained by Berlin
+            Learn how AI Agents will work in Kojin, explained by Berlin
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function AIAgents() {
             </div>
             <div className="mt-6 text-center">
               <a
-                href="https://x.com/RealmsDotGame/status/1888351710168666143"
+                href="https://x.com/Kojin_gg/status/1888351710168666143"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500/20 border border-amber-500/50 rounded-lg text-amber-500 hover:bg-amber-500/30 hover:text-amber-400 transition-all text-base font-medium"

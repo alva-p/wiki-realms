@@ -23,7 +23,7 @@ export default function TeamPage() {
         <div className="mb-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 text-white">Team</h1>
           <div className="w-28 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto" />
-          <p className="text-white/80 mt-4">The core contributors behind REALMS</p>
+          <p className="text-white/80 mt-4">The core contributors behind Kojin</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">

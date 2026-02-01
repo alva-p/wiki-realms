@@ -30,7 +30,7 @@ export default function LorePage() {
             Unreal Wednesday
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Unreal Wednesday are weekly developer talks for the Realms community. In these sessions, the devs share progress, showcase new features, and answer questions from players interested in the evolution of the game. Join to see live demos, get insights, and connect with the team!
+            Unreal Wednesday are weekly developer talks for the Kojin community. In these sessions, the devs share progress, showcase new features, and answer questions from players interested in the evolution of the game. Join to see live demos, get insights, and connect with the team!
           </p>
           <div className="mt-8 flex justify-center">
             <a

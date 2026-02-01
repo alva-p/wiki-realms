@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Wiki Realms - Web3 MMORPG Encyclopedia',
-  description: 'Explore the vast world of REALMS. Discover abilities, NFTs, lore, and more in this epic Web3 MMORPG',
+  title: 'Wiki Kojin - Web3 MMORPG Encyclopedia',
+  description: 'Explore the vast world of Kojin. Discover abilities, NFTs, lore, and more in this epic Web3 MMORPG',
   generator: 'v0.app',
   icons: {
     icon: '/logo.jpg',
