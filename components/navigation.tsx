@@ -22,6 +22,7 @@ export function Navigation() {
     { href: '/team', label: 'Team', icon: '👥' },
     { href: '/unrealwednesday', label: 'Unreal Wednesday', icon: '🖥️' },
     { href: '/socialmedia', label: 'Social Media', icon: '📱' },
+    { href: '/checker', label: 'Checker', icon: '✅' },
   ]
 
   return (
