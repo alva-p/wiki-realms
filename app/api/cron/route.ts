@@ -17,8 +17,9 @@ const totalSupply = Number.parseInt(
 )
 
 const query = `
-  query KojinTokens($tokenAddress: String!, $first: Int!, $after: String) {
-    erc721Tokens(tokenAddress: $tokenAddress, first: $first, after: $after) {
+  query KojinTokens($tokenAddress: String!, $from: Int!, $size: Int!) {
+    erc721Tokens(tokenAddress: $tokenAddress, from: $from, size: $size) {
+      total
       results {
         tokenId
         name
@@ -27,15 +28,11 @@ const query = `
         cdnImage
         owner
       }
-      pageInfo {
-        endCursor
-        hasNextPage
-      }
     }
   }
 `
 
-const fetchPage = async (cursor: string | null) => {
+const fetchPage = async (offset: number) => {
   const response = await fetch(endpoint, {
     method: 'POST',
     headers: {
@@ -46,8 +43,8 @@ const fetchPage = async (cursor: string | null) => {
       query,
       variables: {
         tokenAddress,
-        first: PAGE_SIZE,
-        after: cursor,
+        from: offset,
+        size: PAGE_SIZE,
       },
     }),
   })
@@ -94,11 +91,11 @@ export async function GET(request: Request) {
     attributes?: Record<string, string[]>
   }> = []
 
-  let cursor: string | null = null
-  let hasNextPage = true
+  let offset = 0
+  let total = Number.POSITIVE_INFINITY
 
-  while (hasNextPage) {
-    const page = await fetchPage(cursor)
+  while (offset < total) {
+    const page = await fetchPage(offset)
 
     page.results.forEach((item: { tokenId: string; owner: unknown; name?: string; image?: string; cdnImage?: string; attributes?: Record<string, string[]> }) => {
       const tokenId = Number(item.tokenId)
@@ -126,8 +123,8 @@ export async function GET(request: Request) {
       })
     })
 
-    cursor = page.pageInfo.endCursor
-    hasNextPage = page.pageInfo.hasNextPage
+    total = page.total
+    offset += PAGE_SIZE
   }
 
   const holders = Array.from(holdersMap.values()).sort((a, b) => b.count - a.count)
