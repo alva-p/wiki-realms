@@ -6,7 +6,7 @@ const DEFAULT_ENDPOINT =
   'https://api-gateway.skymavis.com/graphql/mavis-marketplace'
 const DEFAULT_TOKEN_ADDRESS = '0x7766f63c9e921ea97f1b688af27348f2139724a7'
 const DEFAULT_TOTAL_SUPPLY = 999
-const PAGE_SIZE = 200
+const PAGE_SIZE = 50
 
 const endpoint = process.env.RONIN_GRAPHQL_ENDPOINT || DEFAULT_ENDPOINT
 const apiKey = process.env.RONIN_GRAPHQL_API_KEY
