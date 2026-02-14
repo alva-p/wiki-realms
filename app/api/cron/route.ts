@@ -55,11 +55,18 @@ const fetchPage = async (cursor: string | null) => {
   })
 
   if (!response.ok) {
+    const errorText = await response.text()
+    console.error('Cron GraphQL error', {
+      status: response.status,
+      endpoint,
+      body: errorText,
+    })
     throw new Error(`HTTP ${response.status}`)
   }
 
   const payload = await response.json()
   if (payload.errors?.length) {
+    console.error('Cron GraphQL payload errors', payload.errors)
     throw new Error(payload.errors[0].message)
   }
 
