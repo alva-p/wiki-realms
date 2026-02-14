@@ -6,9 +6,10 @@ import Image from 'next/image'
 interface MapSliderProps {
   title: string
   images: string[]
+  description?: string
 }
 
-export function MapSlider({ title, images }: MapSliderProps) {
+export function MapSlider({ title, images, description }: MapSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
@@ -53,6 +54,17 @@ export function MapSlider({ title, images }: MapSliderProps) {
             {title}
           </h2>
         </div>
+
+        {/* Hover description overlay (appears on group hover) */}
+        {description && (
+          <div className="absolute inset-0 flex items-end">
+            <div className="w-full flex justify-center pb-6 pointer-events-none">
+              <div className="max-w-lg bg-black/70 text-white text-sm rounded-lg p-4 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-auto">
+                {description}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Slide indicators */}
         {images.length > 1 && (
