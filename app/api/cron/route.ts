@@ -19,15 +19,13 @@ const totalSupply = Number.parseInt(
 const query = `
   query KojinTokens($tokenAddress: String!, $first: Int!, $after: String) {
     erc721Tokens(tokenAddress: $tokenAddress, first: $first, after: $after) {
-      edges {
-        node {
-          tokenId
-          name
-          attributes
-          image
-          cdnImage
-          owner
-        }
+      items {
+        tokenId
+        name
+        attributes
+        image
+        cdnImage
+        owner
       }
       pageInfo {
         endCursor
@@ -102,9 +100,9 @@ export async function GET(request: Request) {
   while (hasNextPage) {
     const page = await fetchPage(cursor)
 
-    page.edges.forEach((edge: { node: { tokenId: string; owner: unknown; name?: string; image?: string; cdnImage?: string; attributes?: Record<string, string[]> } }) => {
-      const tokenId = Number(edge.node.tokenId)
-      const owner = extractOwner(edge.node.owner)
+    page.items.forEach((item: { tokenId: string; owner: unknown; name?: string; image?: string; cdnImage?: string; attributes?: Record<string, string[]> }) => {
+      const tokenId = Number(item.tokenId)
+      const owner = extractOwner(item.owner)
       if (!owner || Number.isNaN(tokenId)) return
 
       const normalizedOwner = owner.toLowerCase()
@@ -121,10 +119,10 @@ export async function GET(request: Request) {
       tokens.push({
         tokenId,
         owner: normalizedOwner,
-        name: edge.node.name ?? undefined,
-        image: edge.node.image ?? undefined,
-        cdnImage: edge.node.cdnImage ?? undefined,
-        attributes: edge.node.attributes ?? undefined,
+        name: item.name ?? undefined,
+        image: item.image ?? undefined,
+        cdnImage: item.cdnImage ?? undefined,
+        attributes: item.attributes ?? undefined,
       })
     })
 
