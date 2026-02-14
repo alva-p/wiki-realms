@@ -19,7 +19,7 @@ const totalSupply = Number.parseInt(
 const query = `
   query KojinTokens($tokenAddress: String!, $first: Int!, $after: String) {
     erc721Tokens(tokenAddress: $tokenAddress, first: $first, after: $after) {
-      items {
+      results {
         tokenId
         name
         attributes
@@ -100,7 +100,7 @@ export async function GET(request: Request) {
   while (hasNextPage) {
     const page = await fetchPage(cursor)
 
-    page.items.forEach((item: { tokenId: string; owner: unknown; name?: string; image?: string; cdnImage?: string; attributes?: Record<string, string[]> }) => {
+    page.results.forEach((item: { tokenId: string; owner: unknown; name?: string; image?: string; cdnImage?: string; attributes?: Record<string, string[]> }) => {
       const tokenId = Number(item.tokenId)
       const owner = extractOwner(item.owner)
       if (!owner || Number.isNaN(tokenId)) return
