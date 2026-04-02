@@ -67,6 +67,7 @@ export default function Home() {
                 { title: 'Unreal Wednesday', href: '/unrealwednesday' },
                 { title: 'Social Media', href: '/socialmedia' },
                 { title: 'Checker', href: '/checker' },
+                { title: 'Check In Top', href: '/checkin' },
               ].map((section, index) => (
                 <Link
                   key={section.title}

@@ -23,6 +23,7 @@ export function Navigation() {
     { href: '/unrealwednesday', label: 'Unreal Wednesday', icon: '🖥️' },
     { href: '/socialmedia', label: 'Social Media', icon: '📱' },
     { href: '/checker', label: 'Checker', icon: '✅' },
+    { href: '/checkin', label: 'Check-In Top', icon: '🏆' },
   ]
 
   return (
@@ -38,12 +39,12 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
-            {sections.map((section) => (
+          <nav className="hidden md:flex items-center justify-between flex-1 ml-4">
+            {sections.slice(1).map((section) => (
               <Link
                 key={section.href}
                 href={section.href}
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-card rounded-md transition-colors duration-200"
+                className="px-1.5 py-1.5 text-xs font-medium text-muted-foreground hover:text-foreground hover:bg-card rounded-md transition-colors duration-200 whitespace-nowrap"
               >
                 {section.label}
               </Link>
