@@ -44,7 +44,7 @@ export default function CheckinPage() {
         <div className="text-center mb-12">
           <div className="text-5xl mb-3">🏆</div>
           <h1 className="text-4xl font-bold tracking-tight">Top Daily Check In</h1>
-          <p className="text-muted-foreground mt-2">Los más activos del servidor</p>
+          <p className="text-muted-foreground mt-2">Most active members on the server</p>
         </div>
 
         {loading && (
