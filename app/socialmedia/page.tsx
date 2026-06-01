@@ -73,7 +73,7 @@ export default function SocialMediaPage() {
 
             {/* YouTube */}
             <a
-              href="https://www.youtube.com/@RealmsDotGame"
+              href="https://www.youtube.com/@Kojin_gg"
               target="_blank"
               rel="noopener noreferrer"
               className="float-animation delay-3 group"
@@ -86,23 +86,19 @@ export default function SocialMediaPage() {
               <span className="block mt-4 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity text-white">YOUTUBE</span>
             </a>
 
-            {/* Epic Games */}
+            {/* Download */}
             <a
-              href="https://store.epicgames.com/en-US/p/realms-42b0fb"
+              href="https://www.kojin.gg/download"
               target="_blank"
               rel="noopener noreferrer"
               className="float-animation delay-4 group"
             >
               <div className="icon-card glass p-8 rounded-3xl transition-all duration-300 w-28 h-28 md:w-32 md:h-32 flex items-center justify-center">
-                <Image
-                  src="/epicgames.png"
-                  alt="Epic Games"
-                  width={48}
-                  height={48}
-                  className="w-10 h-10 md:w-12 md:h-12 invert brightness-0 invert group-hover:brightness-125 transition-all"
-                />
+                <svg className="w-10 h-10 md:w-12 md:h-12 fill-current group-hover:text-amber-400 transition-colors" viewBox="0 0 24 24">
+                  <path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z" />
+                </svg>
               </div>
-              <span className="block mt-4 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity text-white">EPIC GAMES</span>
+              <span className="block mt-4 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity text-white">DOWNLOAD</span>
             </a>
 
           </div>

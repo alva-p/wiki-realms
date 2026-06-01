@@ -336,7 +336,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Mech Tail',
     image: '/traits/tails/mechtail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Mech%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Mech%20Tail'
   },
     ]
   },
@@ -351,7 +351,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Molten Axe',
     image: '/traits/tails/moltenaxe.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Molten%20Axe'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Molten%20Axe'
   },
     ]
   },
@@ -366,7 +366,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Enryu Tail',
     image: '/traits/tails/enryutail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Enryu%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Enryu%20Tail'
   },
     ]
   },
@@ -469,7 +469,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Steampunk Tail',
     image: '/traits/tails/steampunktail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Steampunk%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Steampunk%20Tail'
   },
     ]
   },
@@ -650,7 +650,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Dragon Trainer',
     image: '/traits/tails/dragontrainer.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Dragon%20Trainer'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Dragon%20Trainer'
   },
     ]
   },
@@ -850,7 +850,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Hiryu Tail',
     image: '/traits/tails/hiryutail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Hiryu%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Hiryu%20Tail'
   },
     ]
   },
@@ -986,7 +986,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Midoryu Tail',
     image: '/traits/tails/midoryutail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Midoryu%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Midoryu%20Tail'
   },
     ]
   },
@@ -1080,7 +1080,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Momoryu Tail',
     image: '/traits/tails/momoryutail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Momoryu%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Momoryu%20Tail'
   },
     ]
   },
@@ -1182,7 +1182,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Kojin Tail',
     image: '/traits/tails/kojintail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Kojin%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Kojin%20Tail'
   },
     ]
   },
@@ -1213,7 +1213,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Hammer',
     image: '/traits/tails/hammer.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Hammer'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Hammer'
   },
     ]
   },
@@ -1228,7 +1228,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Morningstar',
     image: '/traits/tails/morningstar.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Morningstar'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Morningstar'
   },
     ]
   },
@@ -1320,7 +1320,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Spiked Tail',
     image: '/traits/tails/spikedtail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Spiked%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Spiked%20Tail'
   },
     ]
   },
@@ -1358,7 +1358,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Anryu Tail',
     image: '/traits/tails/anryutail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Anryu%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Anryu%20Tail'
   },
     ]
   },
@@ -1373,7 +1373,7 @@ export const abilities: Ability[] = [
     traitType: 'tails',
     traitValue: 'Undying Tail',
     image: '/traits/tails/undyingtail.png',
-    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tails=Undying%20Tail'
+    marketplaceUrl: 'https://marketplace.roninchain.com/collections/kojin?Tail=Undying%20Tail'
   },
     ]
   }
